@@ -41,7 +41,7 @@ const MovieLists = () => {
   return (
     <main className="bg-[#4B86BD] min-h-screen w-full pb-10">
       <MovieListNavBar />
-        <h1 className="text-white text-center font-extrabold text-2xl mt-3">Movie Lists</h1>
+        <h1 className="heading-text text-white text-center font-extrabold text-2xl mt-3">Movie Lists</h1>
       <div className="grid justify-center">
         <input type="text" placeholder="search movies" className="outline-none rounded-xl pl-4 my-3" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
@@ -51,7 +51,7 @@ const MovieLists = () => {
       <div className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-x-5 gap-y-8 mt-5 ml-3 mr-3">
       
         {displayTenMovies?.map((movie) => (
-        <div key={movie.id} data-theme="dim" className=" justify-center grid p-3 w-[270px] h-[300px]">
+        <div key={movie.id} data-theme="dim" className="movie-conrtainer justify-center grid p-3 w-[270px] h-[300px]">
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} className="w-[250px] h-[200px] rounded-sm" />
           <div className="grid grid-cols-2">
           <Link to={`/movie/${movie.id}`} className="bg-white text-sm text-[#2A303C] w-[100px] h-[30px] text-center pt-1 ml-5 mt-3  rounded-md">

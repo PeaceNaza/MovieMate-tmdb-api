@@ -1,3 +1,11 @@
 @media (max-width: 500px) {
- 
+ .heading-text {
+  margin-right: 100px;
+ } 
+ .justify-center input {
+  margin-right: 80px;
+ } 
+ .movie-conrtainer  {
+  margin-left: 40px;
+ }
 }
