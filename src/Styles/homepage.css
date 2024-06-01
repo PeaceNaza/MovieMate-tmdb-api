@@ -6,14 +6,11 @@
   }
 } 
 
-/* homepage.css */
-
-/* Animation for the main heading */
+/* Animation for the homepage texts */
 .home-text h1 {
   animation: fadeInDown 1s ease-in-out;
 }
 
-/* Animation for the subheadings */
 .home-text p {
   animation: fadeInUp 1s ease-in-out;
   animation-delay: 0.5s;
@@ -21,7 +18,7 @@
   animation-fill-mode: forwards;
 }
 
-/* Animation for the "Get started" button */
+
 .home-text a {
   animation: fadeInUp 1s ease-in-out;
   animation-delay: 1s;
