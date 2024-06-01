@@ -1,3 +1,3 @@
 # React + Vite
 
-## This is a tmdb api move app 
+## This is a tmdb api move app

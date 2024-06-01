@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Headers from '../Layouts/Header'
 
-const Homepage = () => {
+const Homepage = () => { 
 
   return (
     <> 
