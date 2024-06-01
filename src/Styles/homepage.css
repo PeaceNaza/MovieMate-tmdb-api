@@ -5,3 +5,49 @@
    padding-left: 30px;
   }
 } 
+
+/* homepage.css */
+
+/* Animation for the main heading */
+.home-text h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+
+/* Animation for the subheadings */
+.home-text p {
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 0.5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Animation for the "Get started" button */
+.home-text a {
+  animation: fadeInUp 1s ease-in-out;
+  animation-delay: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+/* Keyframe animations */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
