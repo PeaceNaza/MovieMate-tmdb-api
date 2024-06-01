@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'react-router-dom';
 import "../Styles/moviedetails.css"
@@ -28,10 +28,10 @@ const Moviedetails = () => {
   }
   return (
     <>
-    <div className='text-white bg-[#233549] min-h-screen pb-10'>
+    <div className='text-white bg-[#233549] min-h-screen w-full pb-10'>
     <div className='justify-center items-center flex flex-col'>
 
-    <h1 className='text-center font-bold text-2xl pt-5'>Movies details</h1>
+    <h1 className='details-header text-center font-bold text-2xl pt-5'>Movies details</h1>
      
      <div className='card text-black bg-white lg:w-[700px] sm:w-[350px] ml-16 mt-5'>
        {movieDetails && (

@@ -11,7 +11,7 @@ const MovieLists = () => {
   const { data, isLoading, error} = useQuery({
     queryFn: () => 
       fetch("https://api.themoviedb.org/3/movie/popular?api_key=11eec6b26256cd542c6f92ff289594c5").then((res) => res.json()
-  ),
+  ), 
   queryKey: ["movies"],
   refetchOnWindowFocus: true,
   refetchOnMount: true,
