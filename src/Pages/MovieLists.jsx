@@ -17,7 +17,7 @@ const MovieLists = () => {
   refetchOnMount: true,
   refetchOnReconnect: true,
   staleTime: 1000 * 60 * 15,
-  }) 
+  });
 
   const favoriteMovies = useStore((state) => state.favoriteMovies);
   const toggleFavoriteMovie = useStore((state) => state.toggleFavoriteMovie);
