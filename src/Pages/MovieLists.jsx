@@ -6,8 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
 import "../Styles/movieLists.css"
 
-
-
 const MovieLists = () => { 
 
   const { data, isLoading, error} = useQuery({
@@ -26,7 +24,6 @@ const MovieLists = () => {
   const { searchTerm, setSearchTerm } = useStore((state) => ({searchTerm: state.searchTerm, setSearchTerm: state.setSearchTerm}));
   
   const displayTenMovies = data?.results?.filter((movie) => movie.title.toLowerCase().includes(searchTerm.toLowerCase())).slice(0, 10)
-
 
   if (isLoading) {
     return <div className='text-white'>
@@ -54,7 +51,7 @@ const MovieLists = () => {
       <div className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-x-5 gap-y-8 mt-5 ml-3 mr-3">
       
         {displayTenMovies?.map((movie) => (
-        <div key={movie.id} data-theme="dim" className=" justify-center grid p-3">
+        <div key={movie.id} data-theme="dim" className=" justify-center grid p-3 w-[270px] h-[300px]">
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} className="w-[250px] h-[200px] rounded-sm" />
           <div className="flex justify-around">
           <Link to={`/movie/${movie.id}`} className="bg-white text-sm text-[#2A303C] px-2 pt-1 mt-3 rounded-md">
