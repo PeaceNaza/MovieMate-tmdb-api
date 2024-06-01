@@ -29,7 +29,7 @@ const Moviedetails = () => {
   return (
     <div className='text-white bg-[#233549] min-h-screen'>
       <h1 className='text-center font-bold text-2xl pt-5'>Movies details</h1>
-    <div className='card text-black bg-white lg:w-[700px] sm:w-[300px] ml-16 mt-5'>
+    <div className='card text-black bg-white lg:w-[700px] sm:w-[350px] ml-16 mt-5'>
       {movieDetails && (
         <div className='card-body grid lg:grid-cols-2 sm:grid-cols-1 text-sm'>
           <div> <img src={`https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`} alt={movieDetails.title} className='w-[280px] h-[300px] rounded-sm' /></div>
