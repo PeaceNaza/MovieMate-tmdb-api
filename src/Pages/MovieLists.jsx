@@ -53,12 +53,12 @@ const MovieLists = () => {
         {displayTenMovies?.map((movie) => (
         <div key={movie.id} data-theme="dim" className=" justify-center grid p-3 w-[270px] h-[300px]">
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} className="w-[250px] h-[200px] rounded-sm" />
-          <div className="flex justify-around">
-          <Link to={`/movie/${movie.id}`} className="bg-white text-sm text-[#2A303C] px-2 pt-1 mt-3 rounded-md">
+          <div className="grid grid-cols-2">
+          <Link to={`/movie/${movie.id}`} className="bg-white text-sm text-[#2A303C] w-[100px] h-[30px] text-center pt-1 ml-5 mt-3  rounded-md">
             View details
           </Link>
          <button onClick={() => toggleFavoriteMovie(movie.id)}> 
-         <FontAwesomeIcon icon={faHeart} className={`h-6 mt-3 mr-4 
+         <FontAwesomeIcon icon={faHeart} className={` h-8 w-10 mr-4 
          ${favoriteMovies.includes(movie.id) ? "text-red-600" : "text-white" }` } />
         </button> 
           </div>
