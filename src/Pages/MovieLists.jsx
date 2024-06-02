@@ -43,7 +43,7 @@ const MovieLists = () => {
       <MovieListNavBar />
         <h1 className="heading-text text-white text-center font-extrabold text-2xl mt-3">Movie Lists</h1>
       <div className="grid justify-center">
-        <input type="text" placeholder="search movies" className="outline-none rounded-xl pl-4 my-3" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <input type="text" placeholder="search movies" className="outline-none rounded-xl px-5 py-1 my-3" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
       <div>
 
