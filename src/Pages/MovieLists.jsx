@@ -4,6 +4,7 @@ import useStore from "../store"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome" 
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
+import { faSearch } from "@fortawesome/free-solid-svg-icons/faSearch"
 import "../Styles/movieLists.css"
 
 const MovieLists = () => { 
@@ -43,7 +44,11 @@ const MovieLists = () => {
       <MovieListNavBar />
       <div className="grid justify-start ml-5">
       <h1 className="heading-text text-white font-extrabold text-2xl mt-3">Movie Lists</h1>
-        <input type="text" placeholder="search movies" className="outline-none rounded-xl px-5 py-1 my-3" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+      <div className="relative">
+        <FontAwesomeIcon icon={faSearch} className="text-black absolute top-1/2 left-52 w-10" />
+      <input type="text" placeholder="search movies" className="outline-none rounded-xl px-5 py-1 my-3 bg-white" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+      </div>
+        
       </div>
       <div>
 
