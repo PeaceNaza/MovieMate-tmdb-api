@@ -39,7 +39,7 @@ const MovieLists = () => {
   } 
 
   return (
-    <main className="bg-[#4B86BD] min-h-screen pb-10 w-full">
+    <main className="bg-[#4B86BD] min-h-screen w-full pb-10">
       <MovieListNavBar />
       <div className="grid justify-start ml-5">
       <h1 className="heading-text text-white font-extrabold text-2xl mt-3">Movie Lists</h1>
@@ -48,13 +48,13 @@ const MovieLists = () => {
       <div>
 
       </div>
-      <div className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-x-5 gap-y-8 mt-5 ml-3 mr-3">
+      <div className="container grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-5 mt-5 ml-3 mr-3">
       
         {displayTenMovies?.map((movie) => (
-        <div key={movie.id} data-theme="dim" className="movie-conrtainer justify-center grid p-3 w-[270px] h-[300px]">
+        <div key={movie.id} data-theme="dim" className="movie-conrtainer justify-center grid p-3 w-[250px] h-[300px] mx-3 my-3">
           <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} className="w-[250px] h-[200px] rounded-sm" />
           <div className="grid grid-cols-2">
-          <Link to={`/movie/${movie.id}`} className="bg-white text-sm text-[#2A303C] w-[100px] h-[30px] text-center pt-1 ml-5 mt-3  rounded-md">
+          <Link to={`/movie/${movie.id}`} className="details-button bg-white text-sm text-[#2A303C] w-[100px] h-[30px] text-center pt-1 ml-5 mt-3  rounded-md">
             View details
           </Link>
          <button onClick={() => toggleFavoriteMovie(movie.id)}> 
