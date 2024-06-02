@@ -45,8 +45,8 @@ const MovieLists = () => {
       <div className="grid justify-start ml-5">
       <h1 className="heading-text text-white font-extrabold text-2xl mt-3">Movie Lists</h1>
       <div className="relative">
-        <FontAwesomeIcon icon={faSearch} className="text-black absolute top-1/2 left-52 w-10" />
-      <input type="text" placeholder="search movies" className="outline-none rounded-xl px-5 py-1 my-3 bg-white" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <FontAwesomeIcon icon={faSearch} className="text-[#9FA9B4] absolute top-[28%] left-[200px] h-6" />
+      <input type="text" placeholder="Search movies" className="outline-none rounded-xl px-5 py-1 my-3 bg-white" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
         
       </div>
