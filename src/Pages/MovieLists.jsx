@@ -39,10 +39,10 @@ const MovieLists = () => {
   } 
 
   return (
-    <main className="bg-[#4B86BD] min-h-screen w-screen pb-10">
+    <main className="bg-[#4B86BD] min-h-screen pb-10 w-full">
       <MovieListNavBar />
-        <h1 className="heading-text text-white text-center font-extrabold text-2xl mt-3">Movie Lists</h1>
-      <div className="grid justify-center">
+      <div className="grid justify-start ml-5">
+      <h1 className="heading-text text-white font-extrabold text-2xl mt-3">Movie Lists</h1>
         <input type="text" placeholder="search movies" className="outline-none rounded-xl px-5 py-1 my-3" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
       <div>
