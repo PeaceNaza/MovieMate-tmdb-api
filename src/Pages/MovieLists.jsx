@@ -39,7 +39,7 @@ const MovieLists = () => {
   } 
 
   return (
-    <main className="bg-[#4B86BD] min-h-screen w-full pb-10">
+    <main className="bg-[#4B86BD] min-h-screen w-screen pb-10">
       <MovieListNavBar />
         <h1 className="heading-text text-white text-center font-extrabold text-2xl mt-3">Movie Lists</h1>
       <div className="grid justify-center">
